@@ -1,0 +1,167 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+.container{
+    background-image: url('images/sky\ background.png');
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    }
+
+.header{
+    height: 30vh;
+    display: flex; 
+    /* flex is to put the header all in one line */
+    align-items: center;
+}
+
+.logo{
+    width: 150px;
+    margin-top: 150px;
+    margin-left: 50px;
+    cursor: pointer;
+    transition-duration: 0.8s;
+    transition-property: transform;
+}
+
+.logo:hover{
+   transform: rotate(360deg);
+}
+
+
+nav{
+    flex: 1;
+    padding-left: 300px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.btn1{
+    text-transform: uppercase;
+    border-radius: 26px;
+    border: 1px solid red;
+    color: whitesmoke;
+    background: linear-gradient(to bottom, rgb(75, 4, 63) 3%, rgb(255, 0, 221) 100% );
+    /* padding is space between text and button */
+    padding-top: 12px;
+    padding-left: 20px;
+    padding-bottom: 12px;
+    padding-right: 20px;
+    /* sequence of margin is clockwise */
+    margin: 50px 50px 0px 0px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.btn2{
+    text-transform: uppercase;
+    border-radius: 26px;
+    border: 1px solid red;
+    color: whitesmoke;
+    background: linear-gradient(to bottom, rgb(255, 0, 221) 3%, rgb(75, 4, 63) 100%);
+    /* padding is space between text and button */
+    padding-top: 12px;
+    padding-left: 20px;
+    padding-bottom: 12px;
+    padding-right: 20px;
+    margin: 50px 50px 0px 0px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.btn1:hover{
+    transform: scale(1.1);
+    background: linear-gradient(to bottom, rgb(255, 0, 221) 3%, rgb(75, 4, 63) 100%);
+}
+
+.btn2:hover:hover{
+    transform: scale(1.1);
+}
+
+.content{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: relative;
+}
+
+.content .bigtext h1{
+    max-width: 800px;
+    text-transform: uppercase;
+    margin-left: 75px;
+    margin-top: 150px;
+    font-size: 50px;
+    line-height: 1.5em;
+    color: lightcyan;
+    /* text-shadow bottom, right and spread */
+    text-shadow: 0px 3px 3px rgb(23, 71, 192);
+}
+
+.content .bigtext span{
+    font-size: 31px;
+    color: azure;
+    margin-left: 75px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+
+.content .bigtext span:hover{
+    font-size: 31px;
+    color: aqua;
+    margin-left: 75px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+
+.btnbig{
+    text-transform: uppercase;
+    border-radius: 26px;
+    border: 2px solid rgb(248, 246, 246, 0.8);
+    color: whitesmoke;
+    background: linear-gradient(to bottom, rgba(244, 240, 18, 0.616) 3%, rgb(225, 34, 59) 100%);
+    /* padding is space between text and button */
+    padding-top: 12px;
+    padding-left: 20px;
+    padding-bottom: 12px;
+    padding-right: 20px;
+    margin: 50px 50px 0px 75px;
+    font-weight: 800;
+    font-size: 30px;
+    cursor: pointer;
+    box-shadow: 2px 4px 2px rgb(86, 85, 85);
+}
+
+.btnbig:hover{
+    background: linear-gradient(to bottom,rgb(225, 34, 59)  3%, rgba(244, 240, 18, 0.616) 100%);
+}
+
+.academy{
+    display: flex;
+    /* border: 1px solid red; */
+    margin-left: 190px;
+}
+
+.academy img{
+    border: 5px solid rgba(255, 255, 255, 0);
+    border-radius: 50px;
+}
+
